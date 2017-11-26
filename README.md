@@ -17,9 +17,11 @@ Your web app must be a 'Personal' type, and the callback should be `http://127.0
 I also chose 'Read Only' access, as I did not want to give myself the power to mess up my Fitbit data.
 
 Once complete, copy the Client ID and secret into their places in the `client-data.json` file.
-Next, use the `gather_keys_oauth2.py` utility from (python-fitbit)(https://github.com/orcasgit/python-fitbit/blob/master/gather_keys_oauth2.py) to get the Access and Refresh keys for your app.
+Next, use the `gather_keys_oauth2.py` utility from [python-fitbit](https://github.com/orcasgit/python-fitbit/blob/master/gather_keys_oauth2.py) to get the Access and Refresh keys for your app.
 Copy the keys into `client-data.json`.
 
 ## Running
 
-TBD
+Run the notebooks in the following order:
+- `get-activities.ipynb` to get a list of active days.
+- `get-fthr.ipynb` to determine my FTHR and heart-rate zones
